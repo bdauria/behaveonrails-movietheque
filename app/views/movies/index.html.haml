@@ -1,0 +1,17 @@
+%h1
+  Movies
+
+= search_form_for @q, class: 'search_form' do |f|
+  = f.label :genre
+  = f.search_field :genre_eq, { id: 'genre-filter' }
+  = f.label :country
+  = f.select :country_eq, countries, { :include_blank => true }, { id: 'country-filter' }
+  = f.label :rate
+  = f.select :rate_gteq, rates, { :include_blank => true }, { id: 'rate-filter' } 
+  = f.submit 'Search'
+
+%table{ name: 'movie-results' }
+  - @movies.each do |movie|
+    %td{ name: 'movie-name' }
+      = movie.name
+
