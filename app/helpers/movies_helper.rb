@@ -4,6 +4,6 @@ module MoviesHelper
   end
 
   def rates
-    (1..8)
+    (1..10)
   end
 end
