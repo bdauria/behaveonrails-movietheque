@@ -1,2 +1,2 @@
-Test-Drive a Filter Based Search Page with Cucumber <br />
+Test-Drive a Filter Based Search Page with Cucumber:
 http://www.behaveonrails.com/?p=124
